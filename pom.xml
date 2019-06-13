@@ -18,12 +18,13 @@
     <properties>
         <java.version>1.8</java.version>
     </properties>
-    <!--<repositories>-->
-        <!--<repository>-->
-            <!--<id>thirdparty</id>-->
-            <!--<url>http://10.10.102.101:8081/nexus/content/repositories/thirdparty/</url>-->
-        <!--</repository>-->
-    <!--</repositories>-->
+  <repositories>
+       <repository>
+         <id>josdev-repo</id>
+         <name>josdev-repo</name>
+         <url>http://nexus.josdev.com/nexus/content/repositories/thirdparty/</url>
+       </repository>
+     </repositories>
 
     <dependencies>
         <dependency>
