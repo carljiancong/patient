@@ -9,7 +9,8 @@ import javax.persistence.*;
 @Table(name = "contact_person")
 public class ContactPerson {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(generator="my_seq")
+    @SequenceGenerator(name="my_seq",sequenceName="HIBERNATE_SEQUENCE", allocationSize=1)
     private Integer contactPersonId;
     @Column(name = "patient_id")
     private Integer patientId;

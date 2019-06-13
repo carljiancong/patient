@@ -11,7 +11,8 @@ import java.util.Date;
 @Table(name = "patient")
 public class Patient {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(generator="my_seq")
+    @SequenceGenerator(name="my_seq",sequenceName="HIBERNATE_SEQUENCE", allocationSize=1)
     private Integer patientId;
     @Column(name = "document_type")
     private String documentType;
