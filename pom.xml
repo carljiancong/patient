@@ -22,9 +22,10 @@
        <repository>
          <id>josdev-repo</id>
          <name>josdev-repo</name>
-         <url>http://nexus.josdev.com/nexus/content/repositories/thirdparty/</url>
+         <url>http://nexus.josdev.com/repository/maven-public/</url>
        </repository>
      </repositories>
+
 
     <dependencies>
         <dependency>
